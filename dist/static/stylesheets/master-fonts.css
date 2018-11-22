@@ -1,0 +1,109 @@
+/*
+
+'BigPixelLight',   
+'CutiveMono',      
+'digital7Mono',  
+'Lekton',          
+'Oslo',            
+'RobotoMono',      
+'ShareTechMono',  
+'softwareTester7', 
+'SpaceMono',       
+'telegrama',       
+'VT323',           
+
+*/
+
+
+/* BigPixelLight
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'BigPixelLight';
+  src: url('/static/Fonts/BigPixelLight.otf'); 
+  text-rendering: optimizeLegibility;
+}
+/* CutiveMono
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'CutiveMono';
+  src: url('/static/Fonts/CutiveMono-Regular.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* digital7Mono
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'digital7Mono';
+  src: url('/static/Fonts/digital7Mono-Italic.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* Lekton
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'Lekton';
+  src: url('/static/Fonts/Lekton-Regular.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* Oslo
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'Oslo';
+  src: url('/static/Fonts/Oslo-Bold.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* RobotoMono
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'RobotoMono_Thin';
+  src: url('/static/Fonts/RobotoMono-Thin.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family:'RobotoMono_Light';
+  src: url('/static/Fonts/RobotoMono-Light.ttf');
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family:'RobotoMono_LightItalic';
+  src: url('/static/Fonts/RobotoMono-LightItalic.ttf');
+  text-rendering: optimizeLegibility;
+}
+/* ShareTechMono
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'ShareTechMono';
+  src: url('/static/Fonts/ShareTechMono-Regular.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* softwareTester7
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'softwareTester7';
+  src: url('/static/Fonts/softwareTester7.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+/* SpaceMono
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'SpaceMono';
+  src: url('/static/Fonts/SpaceMono-Regular.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+
+/* telegrama
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'telegrama';
+  src: url('/static/Fonts/telegrama.otf'); 
+  text-rendering: optimizeLegibility;
+}
+/* VT323
+= = = = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+  font-family:'VT323';
+  src: url('/static/Fonts/VT323-Regular.ttf'); 
+  text-rendering: optimizeLegibility;
+}
+
+
+
+

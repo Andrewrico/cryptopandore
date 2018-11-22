@@ -1,0 +1,716 @@
+/* [ 1 ]  $title
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+.label-view {
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0), 1px 1px 1px #000;
+  color: #fff;
+  font-family: 'BigPixelLight', monospace;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* $button / input
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+
+[class^="$button"] {
+  --button-family-font: 'softwareTester7', monospace;
+  --button-text-color: cyan;
+  --button-bg-color-primary: rgba(0, 0, 0, 0.805);
+  --button-bg-color-secondary: rgba(23, 24, 24, 0.747);
+  --button-border-inset: 0.5px inset rgba(0, 255, 255, 0.716);
+  --button-border-outset: 0.5px outset rgba(0, 255, 255, 0.432);
+  --button-font-size-small: 0.7em;
+  --button-font-size-normal: 0.9em;
+  --button-font-size-large: 1.1em;
+  --button-letter-spacing: 4px;
+  --button-letter-spacing-small: 2px;
+  --button-size-small: 60%;
+  --button-size-normal: 65%;
+  --button-size-large: 90%;
+  --button-hover-text-color: #000;
+  --button-hover-bg-color: radial-gradient(ellipse at center, #fbfbfb 0%, #f0f0f0 33%, #d9dad8 100%);
+  --button-active-box-shadow-active: 1px 1px 15px rgba(38, 198, 218, 1);
+  --button-active-text-color-link: #005f5f;
+  --button-active-bg-color-link: radial-gradient(ellipse at center, #fbfbfb 0%, #f0f0f0 33%, #d9dad8 100%);
+  --button-active-border-link: none;
+}
+
+/* button / input
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+.bttn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+[class^="button"] {
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(167, 255, 255);
+  background: rgba(0, 0, 0, 0);
+  border: 0.5px inset rgb(167, 255, 255);
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+[class^="button"][class$="chat"] {
+  width: 35%;
+  margin-bottom: 8px;
+  line-height: 2;
+  align-self: flex-end;
+  font-size: 0.9em;
+}
+
+[class^="button"][class$="submmit"] {
+  width: 40%;
+  margin: auto;
+  line-height: 2.5;
+}
+
+[class^="button"][class$="clipboard"] {
+  width: 55px;
+  height: 45px;
+  line-height: 3.1;
+  border-radius: 2px;
+
+}
+
+[class^="button"][class$="action"] {
+  width: 20%;
+  min-width: 100px;
+  margin: auto;
+  font-size: 0.8em;
+  line-height: 2.6;
+  border-radius: 32px;
+}
+
+[class^="button"][class$="subscribe"] {
+  width: 30%;
+  padding: 4px;
+  margin: 4px;
+  align-self: flex-end;
+}
+
+[class^="button"][class$="action"] a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+[class^="button"][class$="action"]:hover {
+  background: #000;
+
+}
+
+/* [ 2 ]  @grid 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+
+[class^="@grid-routes"] {
+  display: grid;
+  grid-gap: 64px;
+}
+
+@media screen and (min-width: 1028px) {
+  [class^="@grid-routes"] {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  [class^="@grid-routes"] {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  [class^="@grid-routes"] {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+[class^="@grid-menu"] {
+  display: grid;
+  grid-template-columns: 0% 100% 0%;
+}
+
+@media screen and (min-width: 1366px) {
+  [class^="@grid-menu"] {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+[class^="@grid-ico"] {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1366px) {
+  [class^="@grid-ico"] {
+    display: grid;
+    grid-gap: 64px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* [ 3 ] $Ecard 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+[class^="$Ecard"] {
+  --Ecard-bg-color: #002024;
+  --Ecard-bg-color: -moz-linear-gradient(top, #002024 0%, #000c03 100%);
+  --Ecard-bg-color: -webkit-linear-gradient(top, #002024 0%, #000c03 100%);
+  --Ecard-bg-color: linear-gradient(to bottom, #002024 0%, #000c03 100%);
+  --Ecard-font-family: 'Lekton', monospace;
+  --Ecard-title-font-family: 'SpaceMono', monospace;
+  --Ecard-number-font-family: 'digital7Mono', monospace;
+  --Ecard-description-font-family: 'RobotoMono_Light', monospace;
+  --Ecard-links-font-family: 'Lekton', monospace;
+}
+
+[class^="$Ecard"] {
+  display: flex;
+  flex-direction: column;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: var(--Ecard-bg-color);
+  border: 0.5px inset rgba(0, 255, 255, 0.716);
+  max-width: 368px;
+  width: 100%;
+  height: 100%;
+  min-height: 368px;
+  margin: auto;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #000;
+  border-radius: 4px;
+}
+
+[class^="$Ecard-medium"] {
+  min-height: 420px;
+  max-height: 420px;
+}
+
+[class^="$Ecard-large"] {
+  min-height: 475px;
+  max-height: 475px;
+}
+
+[class^="$Ecard-wide"] {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 260px;
+  max-height: 260px;
+}
+
+[class^="$Ecard"]:hover {
+  backface-visibility: hidden;
+  text-shadow: none;
+  text-decoration: none;
+  background: rgba(9, 10, 10, 0.658);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+[class^="$Ecard"].hoverOn:active {
+  background-color: rgba(0, 0, 0, 0.381);
+  box-shadow: 0.5px 0.5px 1px #00ffdd;
+  text-shadow: none;
+  -webkit-transform: translateY(-2px 1px);
+  transform: translateY(2px);
+}
+
+[class^="$Ecard"].hoverOn:active .ecard-description {
+  color: aquamarine;
+  text-shadow: 1px 1px 1px #000;
+}
+
+[class^="$Ecard"]:active .ecard-title {
+  color: aqua;
+  text-shadow: 1px 1px 1px #000;
+}
+
+[class^="$Ecard"].hoverOn:active .ecard-title {
+  color: aqua;
+  text-shadow: 1px 1px 1px #000;
+}
+
+[class^="$Ecard"]:active .ecard-number {
+  color: aqua;
+  border: 1px solid aqua;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.ec-linker {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+[class^="$Ecard"]>* {
+  width: 100%;
+  max-height: 100%;
+  align-self: flex-start;
+}
+
+.ecard-figure {
+  padding: 8px;
+}
+
+.ecard-figure img {
+  box-shadow: 0 0 50px -7px rgba(107, 191, 174, 0.7);
+}
+
+.ecard-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+}
+
+#communities .ecard-header {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid aquamarine;
+}
+
+.ecard-body {
+  display: flex;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.ecard-footer {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+  border-top: 1px solid aquamarine;
+}
+
+.ec-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: aquamarine;
+  border: 1px solid aquamarine;
+  border-radius: 64px;
+  min-width: 35px;
+  max-width: 35px;
+  min-height: 35px;
+  max-height: 35px;
+  padding: 4px;
+  margin: 4px;
+  font-family: var(--Ecard-number-font-family);
+  animation: colorchange 1s linear infinite;
+}
+
+.ec-title {
+  color: aquamarine;
+  border-bottom: 0px solid cyan;
+  padding: 4px;
+  margin: 4px;
+  font-weight: 900;
+  font-family: var(--Ecard-title-font-family);
+  text-align: left;
+  border-bottom: none;
+}
+
+.ec-category {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.ec-description {
+  color: cyan;
+  text-align: left;
+  margin: 0;
+  padding: 8px;
+  font-size: 0.8em;
+  font-family: var(--Ecard-description-font-family);
+}
+
+#communities .ec-description {
+  min-height: 0px;
+}
+
+.ecard-link-list {
+  text-align: center;
+}
+
+.ecard-link-list a {
+  color: aquamarine;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-family: 'SpaceMono', monospace;
+}
+
+.ecard-link-list a:hover {
+  color: #000;
+  font-size: 1em;
+  background: rgba(0, 255, 179, 0.733);
+  padding: 4px;
+  border-radius: 12px;
+  transition: ease-out 0.5s;
+  font-weight: 300;
+}
+
+.ecard-link-list a:active {
+  color: cyan;
+}
+
+.ec-links {
+  list-style: circle !important;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.ec-fa {
+  padding: 4px;
+  color: aquamarine;
+  font-size: 1em;
+}
+
+.ec-fa:hover {
+  color: cyan;
+}
+
+.ec-fa:hover {
+  color: cyan;
+}
+
+
+.peoplesImg {
+	height: 125px;
+	width:125px;
+	min-height: 50px;
+	min-width: 50px;
+	margin: auto;
+	object-fit: fill;
+	object-position: center;
+	border-radius: 120px;
+
+}
+
+#people [class^="$Ecard"]:nth-child(1) i {
+color:#666;
+cursor:auto;
+}
+
+
+/* @plataform
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+[class^="$plataform"] {
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+  padding: 32px;
+  border-radius: 4px;
+  font-family: 'RobotoMono_Light', monospace;
+  font-size: 0.9em;
+  color: rgb(168, 243, 244);
+  background: rgba(6, 15, 8, 0.884);
+  border: 3px double rgba(0, 255, 255, 0.298);
+  box-shadow: 0.5px 0.5px 0.5px #00ffdd;
+}
+
+.paragraph {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #FFF;
+}
+
+[class^="@grid-menu"] .paragraph {
+  text-align: left;
+}
+
+.paragraph b {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.paragraph mark {
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+}
+
+.feedback-sucess {
+  color: lime;
+  height: 40px;
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
+.feedback-warning {
+  display: block;
+  text-align: left;
+  color: red;
+  height: 20px;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
+#submit .feedback-warning {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  text-align: center;
+}
+
+#ico .feedback-warning {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+
+}
+
+.vue-alert {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+.form-group-1 {
+  max-width: 96%;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group-2 {
+  width: 100%;
+  max-width: 100%;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.form-group-2 span:nth-child(1) {
+  display: flex;
+  backface-visibility: hidden;
+  font-weight: 900;
+  min-width: 100px;
+}
+
+.form-group-2 span:nth-child(2) {
+  font-size: 0.9vw;
+  background: rgba(127, 255, 212, 0.37);
+  color: #fff;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  font-weight: 900;
+  margin: auto 4px;
+}
+
+.p-label {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+#Donate .paragraph p {
+  font-size: 0.9em;
+}
+
+#Donate .paragraph p>b {
+  font-size: 0.8em;
+  color: aquamarine;
+}
+
+.p-list:before {
+  content: ' \2713';
+  margin-right: 4px;
+  color: aquamarine;
+}
+
+@media screen and (min-width: 1028px) {
+  .form-group-2 span:nth-child(2) {
+    font-size: 0.7em;
+    width: 70%;
+  }
+}
+
+label {
+  font-weight: 600;
+}
+
+label:first-child {
+  box-shadow: 1px #fff;
+}
+
+select,
+input[type=text],
+textarea {
+  outline: none;
+  border: cyan inset 1px;
+  background: #0303034d !important;
+  color: aquamarine;
+  padding: 0 8px;
+}
+
+select:focus,
+input[type=text]:focus,
+textarea:focus {
+  background: #0303034d !important;
+  box-shadow: 0 0 1px aquamarine;
+  border: 1px solid aquamarine;
+}
+
+::placeholder {
+  color: aquamarine !important;
+}
+
+::-ms-input-placeholder {
+  color: aquamarine !important;
+}
+
+:-ms-input-placeholder {
+  color: aquamarine !important;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.subscribe-form input[type=text] {
+  width: 70%;
+  height: 100%;
+  padding: 4px;
+  align-self: center;
+}
+
+.subscribe-form button {
+  width: 40%;
+}
+
+.subscribe-form .form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*
+
+.line-bar
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+.dvr1 {
+  max-width: 80%;
+  margin: 24px auto;
+  border: 0.5px aquamarine inset;
+}
+
+.dvr2 {
+  background: rgba(0, 0, 0, 0.996);
+  border: 0.5px rgb(70, 103, 104) double;
+}
+
+/* .lightBar
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+.lightBar span {
+  color: rgb(0, 255, 238);
+  min-width: 100%;
+  position: relative;
+  margin-bottom: 2px;
+  -webkit-animation: moveOut 5s infinite;
+  animation: moveOut 5s infinite;
+}
+
+.lightBar span:after {
+  text-shadow: 0px 0px 29px rgb(0, 208, 255);
+  content: ' \2022';
+  font-size: 0.9em;
+}
+
+.lightBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px auto;
+  overflow: hidden;
+  height: 10px;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: inset 0 0 5px rgb(68, 205, 212);
+  box-shadow: inset 0 0 5px rgb(68, 205, 212);
+  border-radius: 12px;
+}
+
+/* scrollbar
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =%%%% */
+
+.messages::-webkit-scrollbar,
+#consola-terminal::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+main::-webkit-scrollbar {
+  width: 12px;
+}
+
+.messages::-webkit-scrollbar,
+#consola-terminal::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  z-index: 10;
+  position: relative;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.messages::-webkit-scrollbar-track,
+#consola-terminal::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgb(68, 205, 212);
+  box-shadow: inset 0 0 5px rgb(68, 205, 212);
+}
+
+.messages::-webkit-scrollbar-thumb,
+#consola-terminal::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.24);
+  border-radius: 2px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover,
+#consola-terminal::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 255, 212, 0.26);
+}
